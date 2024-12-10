@@ -1,0 +1,14 @@
+{% extends "applibros/index.html" %}
+
+{% block content %}
+    <h1>LIBROS</h1>
+    {% for libro in libros %}
+    <div>
+        <h2>{{libro.titulo}}</h2>
+        <p>{{libro.autor}}</p>
+        <p>{{libro.sinopsis}}</p>
+        <p>{{libro.genero}}</p>
+        <p>{{libro.editorial}}</p>
+    </div>
+    {% endfor %}
+{% endblock content %}

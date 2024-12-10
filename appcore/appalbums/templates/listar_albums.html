@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+
+{% block content %}
+    <h1>ALBUMS</h1>
+    {% for al in albums %}
+    <div>
+        <h2>{{al.titulo}}</h2>
+        <p>{{al.artista}}</p>
+        <p>{{al.duracion}}</p>
+        <p>{{al.fecha_publicacion}}</p>
+        <p>{{al.genero}}</p>
+        <p>{{al.discografia}}</p>
+    </div>
+    {% endfor %}
+{% endblock content %}

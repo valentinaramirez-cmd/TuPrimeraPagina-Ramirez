@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <h1>PELICULAS</h1>
+    {% for pe in peliculas %}
+    <div>
+        <h2>{{pe.titulo}}</h2>
+        <p>{{pe.director}}</p>
+        <p>{{pe.descripcion}}</p>
+        <p>{{pe.genero}}</p>
+        <p>{{pe.estreno}}</p>
+        
+    </div>
+    {% endfor %}
+{% endblock content %}
